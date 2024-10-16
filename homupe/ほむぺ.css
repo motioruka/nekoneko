@@ -1,0 +1,165 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b0e0e6;
+	color: black;  
+    padding: 20px;
+    text-align: right;
+}
+
+header h1 {
+	float: left;
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+h1{
+  padding: 0rem 0rem;
+  border-top: 3px dotted white;
+  border-bottom: 3px dotted white;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 0px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+
+
+h2{
+  background: #dfefff;
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  border: dashed 1px #96c2fe;
+  padding: 0.1em 0.2em;
+  color: #454545;
+   margin: 0.5em 0;
+}
+h3 {
+  background: #c2edff;/*背景色*/
+  padding: 0.5em;/*文字まわり（上下左右）の余白*/
+  width: 100%;
+}
+
+.dazai{
+	 display: inline-block;
+	 }
+
+
+	 
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex>p{
+    width: 49%;
+}
+
+.dazai{
+    width: 50%;
+}
+
+footer {
+    background-color: #87ceeb;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+#okiniiri{
+display: flex;
+    
+}
+
+.music{
+display: flex;
+
+}
+
+/* 「お問い合わせ」ページ ここから*/
+form {
+margin-top: 30px;
+}
+input.textfield, textarea{
+border: 1px solid #d1ccb4;
+}
+
+
+
+input.textfield{
+width: 250px;
+}
+
+textarea{
+width: 500px;
+height: 170px;
+overflow-y: scroll;
+}
+
+
+/* 「お問い合わせ」ページ ここまで*/
+
+/* 「イラスト」ページ ここから*/
+
+.miyazawa{
+    display: flex;
+    justify-content: space-between;
+}
+.miyazawa>p{
+    width: 100%;
+}
+
+.kenzi{
+    display: flex;
+    justify-content: space-between;
+}
+.kenzi>p{
+    width: 100%;
+}
+/* 「イラスト」ページ ここまで*/
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .miyazawa, .kenzi {
+        flex-direction: column;
+    }
+    .miyazawa > p, .kenzi > p {
+        width: 100%;
+    }
+}
